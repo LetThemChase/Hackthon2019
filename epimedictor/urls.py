@@ -21,5 +21,6 @@ from medic import views
 urlpatterns = [
 	url(r'^$', views.home, name='home'),
 	url(r'^symptoms/$', views.symptoms, name='symptoms'),
+	url(r'^conditions/$', views.conditions, name='conditions'),
     url(r'^admin/', admin.site.urls),
 ]
