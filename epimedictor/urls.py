@@ -22,5 +22,6 @@ urlpatterns = [
 	url(r'^$', views.home, name='home'),
 	url(r'^symptoms/$', views.symptoms, name='symptoms'),
 	url(r'^conditions/$', views.conditions, name='conditions'),
-    url(r'^admin/', admin.site.urls),
+    	url(r'^admin/', admin.site.urls),
+	url(r'^treatment/$', views.treatment, name='treatment'),
 ]
