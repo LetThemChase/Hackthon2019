@@ -14,19 +14,21 @@ $ python manage.py migrate
 4. Run server: `python manage.py runserver`.
 5. Access using `http://127.0.0.1:8000/` in a web browser.
 
+Note : Use `virtualenv` to create virtual environment and work in it.
+
 
 ### Features
 
-1. API 1 : To fetch the symptoms
+1. API 1 (symptoms): To fetch the symptoms
 * Apimedic​ ’s APIs is used to get the symptoms
 ```
 http://127.0.0.1:8000/symptoms/
 ```
-2. API 2: For a given symptom , give the medical conditions
+2. API 2 (conditions): For a given symptom , give the medical conditions
 ```
 Example : http://127.0.0.1:8000/conditions/?symptoms=[9]&gender=male&year_of_birth=1982
 ```
-3. API 3: For a given medical condition/diagnosis
+3. API 3 (treatment): For a given medical condition/diagnosis
 * Provides the treatment
 * Treatment is obtained by scraping the web
 * Any subsequent call for the disease fetches the data from the database itself
@@ -34,7 +36,6 @@ Example : http://127.0.0.1:8000/conditions/?symptoms=[9]&gender=male&year_of_bir
 Example : http://127.0.0.1:8000/treatment/?issue=104&issue_condition=Cephalalgia
 ```
 
-Note : Use `virtualenv` to create virtual environment and work in it.
 
 ### Requirements
 
