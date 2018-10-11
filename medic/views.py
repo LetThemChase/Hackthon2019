@@ -19,12 +19,17 @@ from .models import Treatment
 def home(request):
     return HttpResponse('Epimedicator')
 
-#def gettoken()
-	
-	
-#	data=""
-#	return data
+"""def gettoken():
+	api_key='Sn9e7_GMAIL_COM_AUT'
+	hashed_credentials='Ck45Xoe8QLg32Hsf9'
+	url = 'https://authservice.priaid.ch/login'
+	headers = {'api_key':'hashed_credentials'}
 
+	r = requests.post(url, headers=headers)
+	
+	data=r.['Token']
+	return data
+"""
 def symptoms(request):
 	
 	""" This view is used to fetch all the symptoms from ApiMedic
