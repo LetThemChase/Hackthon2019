@@ -33,6 +33,9 @@ Example : http://127.0.0.1:8000/conditions/?symptoms=[9]&gender=male&year_of_bir
 ```
 Example : http://127.0.0.1:8000/treatment/?issue=104&issue_condition=Cephalalgia
 ```
+
+Note : Use `virtualenv` to create virtual environment and work in it.
+
 ### Requirements
 
 Specified in `requirement.txt` file.
