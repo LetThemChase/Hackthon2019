@@ -96,7 +96,15 @@ def treatment(request):
 ###########
 def get_treatment_options(request, symptom_id, issue_id,disease_name):
 
-		
+	""" This method is used to fetch treatment for a given condition
+		Args:
+	  	  request: Request object
+  		  symptom_id: Integer
+		  issue_id: Integer
+		  disease_name: String
+		Returns:
+	  	  Returns string containing the treatment for the disease.
+	"""	
 	
 
         search_results = []
